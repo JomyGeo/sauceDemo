@@ -1,0 +1,143 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1566261420,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "login into the application with valid username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 48
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 77
+                }
+              ],
+              "location": "SourceDemo_Steps.login_into_the_application_with_valid_username_and_password(String,String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8595921967,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Add products to the cart and verify the bill amount",
+        "description": "",
+        "id": "add-products-to-the-sourcedemo-cart-and-place-order;add-products-to-the-cart-and-verify-the-bill-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 243918,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 714120496,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "choose the product randomly and capture the amount",
+            "match": {
+              "location": "SourceDemo_Steps.choose_the_product_randomly_and_capture_the_amount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 457479024,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Navigate to the product cart and verify the selected product added properly",
+            "match": {
+              "location": "SourceDemo_Steps.navigate_to_the_product_cart_and_verify_the_selected_product_added_properly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 814070126,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter user details Firstname \"Jomy\" Lastname \"George\" Pincode \"641041\" to place the order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jomy",
+                  "offset": 30
+                },
+                {
+                  "val": "George",
+                  "offset": 46
+                },
+                {
+                  "val": "641041",
+                  "offset": 63
+                }
+              ],
+              "location": "SourceDemo_Steps.enter_user_details_Firstname_Lastname_Pincode_to_place_the_order(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364607161,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify the Grand total of the product and place the order",
+            "match": {
+              "location": "SourceDemo_Steps.validate_the_Grand_total_of_the_product()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add products to the sourceDemo Cart and place order",
+    "description": "",
+    "id": "add-products-to-the-sourcedemo-cart-and-place-order",
+    "keyword": "Feature",
+    "uri": "SourceDemo_addTocart.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@sourceDemoCart"
+      }
+    ]
+  }
+]
